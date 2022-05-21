@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --theme: #c79c60;
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --gold:#eeff00;
+}
+
+.box-shadow{
+    box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: #000;
+}
+
+nav .brand img, nav .brand h1{
+    vertical-align: bottom;
+}
+
+nav .brand h1{
+    display: inline-block;
+    font-size: 32px;
+    margin: 0 10px;
+    color: var(--theme);
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 10px 20px 30px;
+    margin: 0 0.5rem;
+}
+
+nav ul li i{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 15px;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+nav ul li a.active{
+    background: url(logo.png) no-repeat, url(nav-underline.png) no-repeat;
+    background-size: 20px, 75px 17px;
+    background-position: 0% 30%, center bottom;
+}
+
+header{
+    background-color: #282726;
+    color: #fff;
+    margin-top: 5.65rem;
+    padding: 1rem 0;
+}
+
+.slideshow-container .slider{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem; 
+}
+
+.slideshow-container .slider .slider-content{
+    flex: 1 1 45rem;
+}
+
+.slideshow-container .slider .slider-content span{
+    color:var(--green);
+    font-size: 2.5rem;
+}
+
+.slideshow-container .slider .slider-content h3{
+    color:var(--black);
+    font-size: 7rem;
+}
+
+.slideshow-container .slider .slider-content p{
+    color: #fff;
+    font-size: 2.2rem;
+    padding: 0.5rem 0;
+    line-height: 1.5;
+}
+
+.slideshow-container .slider .slider-image{
+    flex: 1 1 45rem;
+}
+
+.slideshow-container .slider .slider-image img{
+    width: 100%;
+}
+
+
+
+.slider-order-btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+}
+
+.slider-order-btn:hover{
+    background: var(--green);
+    letter-spacing: .1rem;
+}
