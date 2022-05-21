@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- css here -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="includes/css/style.css">
 
     <title>Restaurant Website</title>
 
@@ -17,9 +17,8 @@
 <body>
 
     <!-- navbar starts -->
-    <nav class="box-shadow">
+    <nav class="">
         <div class="brand">
-            <img src="logo.png" alt="logo">
             <h1>Restaurant</h1>
         </div>
 
@@ -37,67 +36,171 @@
                 <a href="contact-us.html">Contact Us</a>
             </li>
             <li>
-                <i class="fa fa-search" aria-hidden="true"></i>
+                <i class="fa fa-search search-icon"></i>
             </li>
         </ul>
+
+        <form action="" class="search-container">
+            <input type="text" name="" id="">
+            <input type="submit" value="Search">
+        </form>
             
     </nav>
     <!-- navbar ends -->
 
     <!-- header section starts -->
     <header>
-        <!-- slideshow starts -->
-        <div class="slideshow-container header-slideshow">
+        <h2>HERE YOU CAN FIND DELECIOUS FOODS</h2>
+        <h3>Quisque nec nibh id lacus fringilla eleifend sed sit amet sem. Donec lectus odio, mollis a nisl non, tempor interdum nisl.</h3>
+        <h4>Quisque nec nibh id lacus fringilla eleifend sed sit amet sem. Donec lectus odio, mollis a nisl non, tempor interdum nisl.</h4>
+        <a href="order.html"><button class="header-order-btn">Order Right Now</button></a>
+    </header>
+    <!-- header section ends -->
 
-            <div class="slideshow-wrapper wrapper">
+    <!-- content section starts -->
+    <section class="content-container" id="content-container">
 
-                <div class="slider">
-                    <div class="slider-content">
-                        <span>our special dish</span>
-                        <h3>spicy noodles</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus dolor cumque?</p>
-                        <a href="#" class="slider-order-btn">order now</a>
+        <h1>Our Foods</h1>
+    
+        <div class="content box-shadow">
+
+            <div class="category-lists">
+                <ul>
+                    <li class="cat-list active" data-filter="all">All Time</li>
+                    <li class="cat-list" data-filter="sunday">Sunday</li>
+                    <li class="cat-list" data-filter="monday">Monday</li>
+                    <li class="cat-list" data-filter="tuesday">Tuesday</li>
+                    <li class="cat-list" data-filter="wednesday">Wendesday</li>
+                    <li class="cat-list" data-filter="thursday">Thursday</li>
+                    <li class="cat-list" data-filter="friday">Friday</li>
+                    <li class="cat-list" data-filter="saturday">Saturday</li>
+                </ul>
+            </div>
+
+            <div class="box-container">
+
+                <div class="box" data-item="sunday">
+                    <div class="image">
+                        <img src="images/Dosai.png" alt="">
                     </div>
-                    <div class="slider-image">
-                        <img src="images/home-img-1.png" alt="">
+                    <div class="food-content">
+                        <h3>Kottu</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                        <span class="price">Rs. 700</span>
                     </div>
                 </div>
 
-                <div class="slider">
-                    <div class="slider-content">
-                        <span>our special dish</span>
-                        <h3>spicy noodles</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus dolor cumque?</p>
-                        <a href="#" class="slider-order-btn">order now</a>
+                <div class="box" data-item="monday">
+                    <div class="image">
+                        <img src="images/kottu.jpg" alt="">
                     </div>
-                    <div class="slider-image">
-                        <img src="images/home-img-1.png" alt="">
+                    <div class="food-content">
+                        <h3>Kottu</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                        <span class="price">Rs. 700</span>
                     </div>
                 </div>
 
-                <div class="slider">
-                    <div class="slider-content">
-                        <span>our special dish</span>
-                        <h3>spicy noodles</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus dolor cumque?</p>
-                        <a href="#" class="slider-order-btn">order now</a>
+                <div class="box" data-item="tuesday">
+                    <div class="image">
+                        <img src="images/hoppers.jpg" alt="">
                     </div>
-                    <div class="slider-image">
-                        <img src="images/home-img-1.png" alt="">
+                    <div class="food-content">
+                        <h3>Kottu</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                        <span class="price">Rs. 700</span>
+                    </div>
+                </div>
+
+                <div class="box" data-item="wednesday">
+                    <div class="image">
+                        <img src="images/friedrice.png" alt="">
+                    </div>
+                    <div class="food-content">
+                        <h3>Kottu</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                        <span class="price">Rs. 700</span>
+                    </div>
+                </div>
+
+                <div class="box" data-item="thursday">
+                    <div class="image">
+                        <img src="images/idli.jpg" alt="">
+                    </div>
+                    <div class="food-content">
+                        <h3>Kottu</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                        <span class="price">Rs. 700</span>
+                    </div>
+                </div>
+
+                <div class="box" data-item="friday">
+                    <div class="image">
+                        <img src="images/idiyapam.jpeg" alt="">
+                    </div>
+                    <div class="food-content">
+                        <h3>Kottu</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                        <span class="price">Rs. 700</span>
+                    </div>
+                </div>
+
+                <div class="box" data-item="saturday">
+                    <div class="image">
+                        <img src="images/kottu.jpg" alt="">
+                    </div>
+                    <div class="food-content">
+                        <h3>Kottu</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                        <span class="price">Rs. 700</span>
                     </div>
                 </div>
 
             </div>
-
-            <div class="slideshow-pagination"></div>
-
+    
         </div>
-        <!-- slideshow ends -->
-    </header>
-    <!-- header section ends -->
+    
+    </section>
+    <!-- content section ends -->
+
+    <!-- footer section starts -->
+    <footer>
+
+        <div class="locations">
+            <h4>Locations</h4>
+            <div class="location">Sri Lanka</div>
+            <div class="location">India</div>
+            <div class="location">Canada</div>
+            <div class="location">France</div>
+            <div class="location">Paris</div>
+        </div>
+        <div class="quick-links">
+            <h4>Quick Links</h4>
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Menu</a>
+            <a href="">Order</a>
+        </div>
+        <div class="contact-info">
+            <h4>Contact Info</h4>
+            <span>+94-077-1234-567</span>
+            <span>+94-021-2222-555</span>
+            <span>rest@gmail.com</span>
+            <span>Jaffna, Sri lanka, 40000</span>
+        </div>
+        <div class="follow-us">
+            <h4>Follow Us</h4>
+            <a href=""><i class="fa fa-facebook"></i> Facebook</a>
+            <a href=""><i class="fa fa-instagram"></i> Instagram</a>
+            <a href=""><i class="fa fa-twitter"></i> Twitter</a>
+            <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+        </div>
+
+    </footer>
+    <!-- footer section ends -->
 
     <!-- js here -->
-    <script src="main.js"></script>
+    <script src="includes/js/main.js"></script>
     
 </body>
 </html>

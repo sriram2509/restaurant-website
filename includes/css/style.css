@@ -12,7 +12,7 @@
 }
 
 .box-shadow{
-    box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 nav{
@@ -28,15 +28,15 @@ nav{
     background-color: #000;
 }
 
-nav .brand img, nav .brand h1{
-    vertical-align: bottom;
-}
-
 nav .brand h1{
+    background: url(/home/ukistu17/Documents/restaurant-website/images/logo.png) no-repeat;
+    padding: 0 25%;
+    background-position-y: bottom;
     display: inline-block;
     font-size: 32px;
     margin: 0 10px;
     color: var(--theme);
+    cursor: default;
 }
 
 nav ul{
@@ -65,69 +65,244 @@ nav ul li i{
 }
 
 nav ul li a.active{
-    background: url(logo.png) no-repeat, url(nav-underline.png) no-repeat;
+    background: url(/home/ukistu17/Documents/restaurant-website/images/logo.png) no-repeat, url(/home/ukistu17/Documents/restaurant-website/images/nav-underline.png) no-repeat;
     background-size: 20px, 75px 17px;
     background-position: 0% 30%, center bottom;
 }
 
+nav .search-container{
+    position: absolute;
+    right: 10px;
+    top: 3.5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: 400ms;
+}
+
+nav .search-container input[type="text"]{
+    padding: 8px 5px;
+    border: 0;
+    box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    font-size: 16px;
+}
+
+nav .search-container input[type="submit"]{
+    background-color: var(--theme);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 0.3rem;
+    border: 0;
+    box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.2);
+}
+
+nav .search-container input[type="submit"]:hover{
+    background-color: #000;
+    cursor: pointer;
+}
+
+nav .search-container.active{
+    top: 6rem;
+    opacity: 1;
+    pointer-events: auto;
+}
+
 header{
-    background-color: #282726;
     color: #fff;
     margin-top: 5.65rem;
-    padding: 1rem 0;
+    padding: 8rem 0;
+    text-align: center;
+    cursor: default;
+    background: url(/home/ukistu17/Documents/restaurant-website/images/banner-bg.jpg);
 }
 
-.slideshow-container .slider{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem; 
+header h2{
+    margin: 6rem 0 0.5rem 0;
+    font-size: 30px;
 }
 
-.slideshow-container .slider .slider-content{
-    flex: 1 1 45rem;
+header h3{
+    font-size: 20px;
 }
 
-.slideshow-container .slider .slider-content span{
-    color:var(--green);
-    font-size: 2.5rem;
-}
-
-.slideshow-container .slider .slider-content h3{
-    color:var(--black);
-    font-size: 7rem;
-}
-
-.slideshow-container .slider .slider-content p{
+header .header-order-btn{
+    background-color: var(--theme);
+    border: none;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
     color: #fff;
-    font-size: 2.2rem;
-    padding: 0.5rem 0;
-    line-height: 1.5;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 0.2rem;
 }
 
-.slideshow-container .slider .slider-image{
-    flex: 1 1 45rem;
-}
-
-.slideshow-container .slider .slider-image img{
-    width: 100%;
-}
-
-
-
-.slider-order-btn{
-    margin-top: 1rem;
-    display: inline-block;
-    font-size: 1.7rem;
-    color:#fff;
-    background: var(--black);
-    border-radius: .5rem;
+header .header-order-btn:hover{
+    background-color: #000;
     cursor: pointer;
-    padding: 0.8rem 1rem;
+}
+
+.content-container{
+    text-align: center;
+    background-color: #fff;
+    padding: 1%;
+}
+
+.content-container h1{
+    font-size: 30px;
+    color: var(--theme);
+    padding: 0.5rem 0;
+}
+
+.content-container .content{
+    width: 60%;
+    margin: auto;
+    background-color: #fff;
+}
+
+.content-container .content .category-lists{
+    padding: 1%;
+    width: 98%;
+    margin: auto;
+}
+
+.content-container .content .category-lists ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-container .content .category-lists ul li{
+    font-size: large;
+    font-weight: bold;
+    padding: 1% 2%;
+    border-radius: 0.5rem;
+    border:1px solid var(--theme);
+    cursor: pointer;
+}
+
+.content-container .content .category-lists ul li.active{
+    background-color: var(--theme);
+    color: #fff;
+}
+
+.content-container .content .category-lists ul li:hover{
+    background-color: var(--theme);
+    color: #fff;
+}
+
+.content .box-container{
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.content .box-container .box{
+    border: 2px solid var(--theme);
+    border-radius: 0.2rem;
+    background-color: var(--theme);
+}
+
+.content .box-container .box.hide{
+    display: none;
+}
+
+.content .box-container .box .image{
+    height: 350px;
+}
+
+.content .box-container .box .image img{
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #000;
+    border-radius: 0.2rem;
+    object-fit: cover;
+}
+
+.content .box-container .box .food-content{
+    color: #fff;
+}
+
+.content .box-container .box .food-content h3{
+    font-size: 26px;
+}
+
+.content .box-container .box .food-content span{
+    font-size: 20px;
+    color: #000;
+}
+
+.content .box-container .box:hover{
+    background-color: #000;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+    border-top: 2px solid #666;
+}
+
+footer .locations, footer .quick-links, footer .contact-info, footer .follow-us{
+    background-color: #000;
+    width: 20%;
+    padding: 1%;
+}
+
+footer .locations h4, footer .quick-links h4, footer .contact-info h4, footer .follow-us h4{
+    margin: 1rem 0;
+    font-size: large;
+    color: var(--theme);
+    cursor: default;
+}
+
+footer .locations .location{
+    margin: 0.5rem 0.3rem;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: default;
+}
+
+footer .quick-links a{
+    display: block;
+    margin: 0.5rem 0.3rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer .quick-links a:hover{
+    margin: 0 1px;
+    text-decoration: underline;
+    color: var(--theme);
+}
+
+footer .contact-info span{
+    color: #fff;
+    display: block;
+    margin: 0.5rem 0.3rem;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: default;
+}
+
+footer .follow-us a{
+    color: #fff;
+    display: block;
+    margin: 0.5rem 0.3rem;
     text-decoration: none;
 }
 
-.slider-order-btn:hover{
-    background: var(--green);
-    letter-spacing: .1rem;
+footer .follow-us a i{
+    font-size: 20px;
+}
+
+footer .follow-us a:hover{
+    margin: 0 1px;
+    text-decoration: underline;
 }
