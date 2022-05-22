@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root{
+    --theme: #c79c60;
     --green:#27ae60;
     --black:#192a56;
     --light-color:#666;
@@ -17,26 +18,18 @@
     transition: all .2s linear;
 }
 
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-padding-top: 5.5rem;
-    scroll-behavior: smooth;
-}
-
-
 
 .sub-heading{
     text-align: center;
     color:var(--green);
-    font-size: 2rem;
+    font-size: 30px;
     padding-top: 1rem;
 }
 
 .heading{
     text-align: center;
     color:var(--black);
-    font-size: 3rem;
+    font-size: 40px;
     padding-bottom: 2rem;
     text-transform: uppercase;
 }
@@ -44,12 +37,20 @@ html{
 .btn{
     margin-top: 1rem;
     display: inline-block;
-    font-size: 1.7rem;
+    font-size: 20px;
     color:#fff;
     background: var(--black);
     border-radius: .5rem;
     cursor: pointer;
-    padding:.8rem 3rem;
+    padding:.8rem 1.5rem;
+}
+
+.btn:hover{
+    background: var(--theme);
+}
+
+.order{
+    padding: 8rem 0;
 }
 
 .order form{
@@ -75,7 +76,7 @@ html{
 .order form .inputBox .input span{
     display:block;
     padding:.5rem 0;
-    font-size: 1.5rem;
+    font-size: 20px;
     color:var(--light-color);
 }
 
@@ -84,7 +85,7 @@ html{
     background:#eee;
     border-radius: .5rem;
     padding:1rem;
-    font-size: 1.6rem;
+    font-size: 20px;
     color:var(--black);
     text-transform: none;
     margin-bottom: 1rem;
@@ -103,84 +104,4 @@ html{
 
 .order form .btn{
     margin-top: 0;
-}
-
-
-/* media queries  */
-
-@media (max-width:991px){
-
-    html{
-        font-size: 55%;
-    }
-    
-    header{
-        padding:1rem 2rem;
-    }
-
-    section{
-        padding:2rem;
-    }
-
-
-}
-
-@media (max-width:768px){
-
-    header .icons #menu-bars{
-        display: inline-block;
-    }
-
-    header .navbar{
-        position: absolute;
-        top:100%; left:0; right:0;
-        background:#fff;
-        border-top: .1rem solid rgba(0,0,0,.2);
-        border-bottom: .1rem solid rgba(0,0,0,.2);
-        padding:1rem;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    header .navbar.active{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-
-    header .navbar a{
-        display: block;
-        padding:1.5rem;
-        margin:1rem;
-        font-size: 2rem;
-        background:#eee;
-    }
-
-    #search-form #search-box{
-        width:90%;
-        margin:0 1rem;
-    }
-
-    .home .home-slider .slide .content h3{
-        font-size: 5rem;
-    }
-
-}
-
-@media (max-width:450px){
-
-    html{
-        font-size: 50%;
-    }
-
-    .dishes .box-container .box img{
-        height:auto;
-        width: 100%;
-    }
-
-    .order form .inputBox .input{
-        width:100%;
-    }
-
-}
-
-body {
-    background-image: url("https://thumbs.dreamstime.com/b/fine-restaurant-dinner-table-place-setting-18861199.jpg")
 }
