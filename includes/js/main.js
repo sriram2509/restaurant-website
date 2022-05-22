@@ -5,6 +5,13 @@ searchIcon.addEventListener("click", function (){
     searchContainer.classList.toggle("active");
 });
 
+const mobileMenuIcon = document.querySelector(".mobile-menu-icon");
+const mobileMenuContainer = document.querySelector(".mobile-menu-container");
+
+mobileMenuIcon.addEventListener("click", function (){
+    mobileMenuContainer.classList.toggle("active");
+});
+
 let catList = document.querySelectorAll(".cat-list");
 let box = document.querySelectorAll(".box");
 

@@ -4,216 +4,309 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css gose here -->
-    <link rel="stylesheet" href="includes/css/menu.css">
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>Menu</title>
+    
+    <!-- font awesome here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- css gose here -->
+    <link rel="stylesheet" href="includes/css/style.css">
+    <link rel="stylesheet" href="includes/css/menu.css">
+
+    <title>Restaurant || Menu</title>
 </head>
 <body>
+
+    <!-- navbar starts -->
+    <nav>
+        <div class="navbar">
+            <div class="brand">
+                <h1>Restaurant</h1>
+            </div>
+
+            <ul class="nav-menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about-us.html">About Us</a>
+                </li>
+                <li>
+                    <a href="menu.html"  class="active">Menu</a>
+                </li>
+                <li>
+                    <a href="contact-us.html">Contact Us</a>
+                </li>
+            </ul>
+            <div class="search-icon">
+                <i class="fa fa-search"></i>
+            </div>
+
+            <form action="" class="search-container">
+                <input type="text" name="" id="">
+                <input type="submit" value="Search">
+            </form>
+
+            <div class="mobile-menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="mobile-menu-container">
+            <ul>
+                <li>
+                <a href="index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="about-us.html">About Us</a>
+                </li>
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="contact-us.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+            
+    </nav>
+    <!-- navbar ends -->
         
 
-<!-- menu section starts  -->
+    <!-- menu section starts  -->
 
-<section class="menu" id="menu">
+    <section class="menu" id="menu">
 
-    <h3 class="sub-heading"> our menu </h3>
-    <h1 class="heading"> today's speciality </h1>
+        <h3 class="sub-heading"> our menu </h3>
+        <h1 class="heading"> today's speciality </h1>
 
-    <div class="box-container">
+        <div class="box-container">
 
-        <div class="box">
-            <div class="image">
-                <img src="images/kottu.jpg" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+            <div class="box">
+                <div class="image">
+                    <img src="images/kottu.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
                 </div>
-                <h3>Kottu</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-                <a href="#" class="btn">add to cart</a>
-                <span class="price">Rs700</span>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Kottu</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="price">Rs700</span>
+                </div>
             </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/friedrice.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Fried Rice</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="price">Rs750</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/pittu.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Pittu</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="price">Rs150</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/idiyapam.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Idiyapam</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="price">Rs120</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/hoppers.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Hoppers</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="price">Rs50</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/Dosai.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Dosai</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="price">Rs25</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/idli.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Idli</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="price">Rs60</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/rotti.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Rotti</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="price">Rs80</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/rice.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Rice & Curry</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="price">Rs220</span>
+                </div>
+            </div>
+
         </div>
 
-        <div class="box">
-            <div class="image">
-                <img src="images/friedrice.png" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Fried Rice</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-                <a href="#" class="btn">add to cart</a>
-                <span class="price">Rs750</span>
-            </div>
+    </section>
+    <!-- menu section ends -->
+
+    <!-- footer section starts -->
+    <footer>
+
+        <div class="locations">
+            <h4>Locations</h4>
+            <div class="location">Sri Lanka</div>
+            <div class="location">India</div>
+            <div class="location">Canada</div>
+            <div class="location">France</div>
+            <div class="location">Paris</div>
+        </div>
+        <div class="quick-links">
+            <h4>Quick Links</h4>
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Menu</a>
+            <a href="">Order</a>
+        </div>
+        <div class="contact-info">
+            <h4>Contact Info</h4>
+            <span>+94-077-1234-567</span>
+            <span>+94-021-2222-555</span>
+            <span>rest@gmail.com</span>
+            <span>Jaffna, Sri lanka, 40000</span>
+        </div>
+        <div class="follow-us">
+            <h4>Follow Us</h4>
+            <a href=""><i class="fa fa-facebook"></i> Facebook</a>
+            <a href=""><i class="fa fa-instagram"></i> Instagram</a>
+            <a href=""><i class="fa fa-twitter"></i> Twitter</a>
+            <a href=""><i class="fa fa-youtube"></i> Youtube</a>
         </div>
 
-        <div class="box">
-            <div class="image">
-                <img src="images/pittu.jpg" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Pittu</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-                <a href="#" class="btn">add to cart</a>
-                <span class="price">Rs150</span>
-            </div>
-        </div>
+    </footer>
+    <!-- footer section ends -->
 
-        <div class="box">
-            <div class="image">
-                <img src="images/idiyapam.jpeg" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Idiyapam</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-                <a href="#" class="btn">add to cart</a>
-                <span class="price">Rs120</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/hoppers.jpg" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Hoppers</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-                <a href="#" class="btn">add to cart</a>
-                <span class="price">Rs50</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/Dosai.png" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Dosai</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-                <a href="#" class="btn">add to cart</a>
-                <span class="price">Rs25</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/idli.jpg" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Idli</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-                <a href="#" class="btn">add to cart</a>
-                <span class="price">Rs60</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/rotti.jpg" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Rotti</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-                <a href="#" class="btn">add to cart</a>
-                <span class="price">Rs80</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/rice.jpg" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Rice & Curry</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-                <a href="#" class="btn">add to cart</a>
-                <span class="price">Rs220</span>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- menu section ends -->
-
-
-
-<!-- custom js file link  -->
+    <!-- js here -->
+    <script src="includes/js/main.js"></script>
     
 </body>
 </html>

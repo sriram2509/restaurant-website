@@ -15,20 +15,22 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-nav{
+nav .navbar{
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     padding: 1rem 7%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     z-index: 1000;
     background-color: #000;
 }
 
-nav .brand h1{
+nav .navbar .brand{
+ margin-right: auto !important;
+}
+
+nav .navbar .brand h1{
     background: url(/home/ukistu17/Documents/restaurant-website/images/logo.png) no-repeat;
     padding: 0 25%;
     background-position-y: bottom;
@@ -39,12 +41,12 @@ nav .brand h1{
     cursor: default;
 }
 
-nav ul{
+nav .navbar .nav-menu{
     list-style: none;
     display: flex;
 }
 
-nav ul li a{
+nav .navbar .nav-menu li a{
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -54,7 +56,7 @@ nav ul li a{
     margin: 0 0.5rem;
 }
 
-nav ul li i{
+nav .navbar .search-icon i{
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -64,13 +66,13 @@ nav ul li i{
     cursor: pointer;
 }
 
-nav ul li a.active{
+nav .navbar .nav-menu li a.active{
     background: url(/home/ukistu17/Documents/restaurant-website/images/logo.png) no-repeat, url(/home/ukistu17/Documents/restaurant-website/images/nav-underline.png) no-repeat;
     background-size: 20px, 75px 17px;
     background-position: 0% 30%, center bottom;
 }
 
-nav .search-container{
+nav .navbar .search-container{
     position: absolute;
     right: 10px;
     top: 3.5rem;
@@ -79,7 +81,7 @@ nav .search-container{
     transition: 400ms;
 }
 
-nav .search-container input[type="text"]{
+nav .navbar .search-container input[type="text"]{
     padding: 8px 5px;
     border: 0;
     box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.2);
@@ -87,7 +89,7 @@ nav .search-container input[type="text"]{
     font-size: 16px;
 }
 
-nav .search-container input[type="submit"]{
+nav .navbar .search-container input[type="submit"]{
     background-color: var(--theme);
     color: #fff;
     font-size: 16px;
@@ -98,12 +100,12 @@ nav .search-container input[type="submit"]{
     box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.2);
 }
 
-nav .search-container input[type="submit"]:hover{
+nav .navbar .search-container input[type="submit"]:hover{
     background-color: #000;
     cursor: pointer;
 }
 
-nav .search-container.active{
+nav .navbar .search-container.active{
     top: 6rem;
     opacity: 1;
     pointer-events: auto;
@@ -111,7 +113,6 @@ nav .search-container.active{
 
 header{
     color: #fff;
-    margin-top: 5.65rem;
     padding: 8rem 0;
     text-align: center;
     cursor: default;
@@ -156,7 +157,7 @@ header .header-order-btn:hover{
 }
 
 .content-container .content{
-    width: 60%;
+    width: 90%;
     margin: auto;
     background-color: #fff;
 }
@@ -170,7 +171,7 @@ header .header-order-btn:hover{
 .content-container .content .category-lists ul{
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .content-container .content .category-lists ul li{
@@ -234,10 +235,6 @@ header .header-order-btn:hover{
     color: #000;
 }
 
-.content .box-container .box:hover{
-    background-color: #000;
-}
-
 
 footer{
     display: flex;
@@ -277,7 +274,6 @@ footer .quick-links a{
 }
 
 footer .quick-links a:hover{
-    margin: 0 1px;
     text-decoration: underline;
     color: var(--theme);
 }
@@ -303,6 +299,95 @@ footer .follow-us a i{
 }
 
 footer .follow-us a:hover{
-    margin: 0 1px;
     text-decoration: underline;
+    color: var(--theme);
+}
+
+.mobile-menu-icon{
+    display: none;
+    cursor: pointer;
+    font-size: xx-large;
+    position: absolute;
+    right: 2rem;
+    color: #fff;
+}
+
+.mobile-menu-container{
+    background-color: #0c0c0c;
+    top: 4.34rem;
+    position: fixed;
+    padding: 20px;
+    float: right;
+    right: 1rem;
+    opacity: 0.8;
+    display: none;
+    z-index: 1000;
+}
+.mobile-menu-container ul{
+    list-style: none;
+}
+
+.mobile-menu-container ul li{
+    margin: 1.5rem 0;
+    
+}
+
+.mobile-menu-container ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 10px 17px 30px;
+}
+
+.mobile-menu-container ul li a.active{
+    background: url(/home/ukistu17/Documents/restaurant-website/images/logo.png) no-repeat, url(/home/ukistu17/Documents/restaurant-website/images/nav-underline.png) no-repeat;
+    background-size: 20px, 70px 17px;
+    background-position: 0% 30%, center bottom;
+}
+
+
+@media(max-width: 1024px){
+    nav .navbar .nav-menu{
+        display: none;
+    }
+
+    nav .navbar .search-icon{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-container{
+        display: none;
+    }
+
+    .mobile-menu-container.active{
+        display: block;
+    }
+
+    .content-container .content{
+        width: 100%;
+    }
+
+    .content-container .content .category-lists{
+        display: none;
+    }
+    
+    .content-container .content .box-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer{
+        display: block;
+        text-align: center;
+    }
+
+    footer .locations, footer .quick-links, footer .contact-info, footer .follow-us{
+        width: 100%;
+        padding: 1% 0;
+    }
 }
