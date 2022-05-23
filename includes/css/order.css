@@ -21,7 +21,7 @@
 
 .sub-heading{
     text-align: center;
-    color:var(--green);
+    color:var(--theme);
     font-size: 30px;
     padding-top: 1rem;
 }
@@ -39,14 +39,14 @@
     display: inline-block;
     font-size: 20px;
     color:#fff;
-    background: var(--black);
+    background: var(--theme);
     border-radius: .5rem;
     cursor: pointer;
     padding:.8rem 1.5rem;
 }
 
 .btn:hover{
-    background: var(--theme);
+    background: #000;
 }
 
 .order{
