@@ -31,7 +31,7 @@ nav .navbar .brand{
 }
 
 nav .navbar .brand h1{
-    background: url(https://uki7-group1.github.io/restaurant-website/images/logo.png) no-repeat;
+    background-image: url(/images/logo.png) no-repeat;
     padding: 0 25%;
     background-position-y: bottom;
     display: inline-block;
