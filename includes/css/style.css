@@ -67,7 +67,7 @@ nav .navbar .search-icon i{
 }
 
 nav .navbar .nav-menu li a.active{
-    background: url(images/logo.png) no-repeat, url(https://uki7-group1.github.io/restaurant-website/images/nav-underline.png) no-repeat;
+    background: url(https://uki7-group1.github.io/restaurant-website/images/logo.png) no-repeat, url(https://uki7-group1.github.io/restaurant-website/images/nav-underline.png) no-repeat;
     background-size: 20px, 75px 17px;
     background-position: 0% 30%, center bottom;
 }
