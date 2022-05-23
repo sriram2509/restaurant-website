@@ -31,7 +31,7 @@ nav .navbar .brand{
 }
 
 nav .navbar .brand h1{
-    background: url(/home/ukistu17/Documents/restaurant-website/images/logo.png) no-repeat;
+    background: url(images/logo.png) no-repeat;
     padding: 0 25%;
     background-position-y: bottom;
     display: inline-block;
@@ -67,7 +67,7 @@ nav .navbar .search-icon i{
 }
 
 nav .navbar .nav-menu li a.active{
-    background: url(/home/ukistu17/Documents/restaurant-website/images/logo.png) no-repeat, url(/home/ukistu17/Documents/restaurant-website/images/nav-underline.png) no-repeat;
+    background: url(images/logo.png) no-repeat, url(images/nav-underline.png) no-repeat;
     background-size: 20px, 75px 17px;
     background-position: 0% 30%, center bottom;
 }
