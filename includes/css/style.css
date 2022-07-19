@@ -31,7 +31,7 @@ nav .navbar .brand{
 }
 
 nav .navbar .brand h1{
-    background: url(https://uki7-group1.github.io/restaurant-website/images/logo.png) no-repeat;
+    background: url(../images/logo.png) no-repeat;
     padding: 0 25%;
     background-position-y: bottom;
     display: inline-block;
@@ -67,7 +67,7 @@ nav .navbar .search-icon i{
 }
 
 nav .navbar .nav-menu li a.active{
-    background: url(https://uki7-group1.github.io/restaurant-website/images/logo.png) no-repeat, url(https://uki7-group1.github.io/restaurant-website/images/nav-underline.png) no-repeat;
+    background: url(../images/logo.png) no-repeat, url(../images/nav-underline.png) no-repeat;
     background-size: 20px, 75px 17px;
     background-position: 0% 30%, center bottom;
 }
@@ -116,7 +116,7 @@ header{
     padding: 8rem 0;
     text-align: center;
     cursor: default;
-    background: url(https://uki7-group1.github.io/restaurant-website/images/banner-bg.jpg);
+    background: url(../images/banner-bg.jpg);
 }
 
 header h2{
